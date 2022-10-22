@@ -1,0 +1,371 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+@font-face{
+  src: url(../font/Merriweather-Regular.ttf);
+  font-family: Merriweather;
+}
+body{
+  font-family: 'Merriweather';
+  font-style: normal;
+  background-color: #FEFDF9;
+  color: #404040;
+  letter-spacing: 0.0125em;
+  font-weight: 300px;
+  
+}
+
+
+.body-clip-path-polygon{
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  background-color:#FE9D0C;
+  -webkit-clip-path: polygon(65% 0, 0 0, 0 100%);
+  clip-path: polygon(65% 0, 0 0, 0 100%);
+  height: 1886px;
+}
+.section-gap-top {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+}
+.mb-80 {
+  margin-bottom: 80px;
+}
+.mb-60{
+  margin-bottom: 60px;
+}
+
+
+
+
+.body-clip-path-polygon{
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  background-color:#FE9D0C;
+  -webkit-clip-path: polygon(65% 0, 0 0, 0 100%);
+  clip-path: polygon(65% 0, 0 0, 0 100%);
+  height: 1886px;
+}
+
+/* Menu */
+
+.menu-section{
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+  background-color:#FEFDF9;
+}
+.menu{
+  max-width: 1060px;
+  margin: auto;
+}
+.menu .navbar-collapse {
+
+  justify-content: flex-end;
+  
+}
+.nav-item a{
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.0125em;
+}
+.nav-item{
+  padding-left: 45px;
+  text-align: center;
+}
+.hover a:hover{
+  color:#FE9D0C !important;
+}
+
+.hover li > a:after{
+  content: '';
+  display: block;
+  height: 1.5px;
+  background: #FE9D0C ;
+  transform: scaleX(0);
+  transition: transform .3s;
+}
+.hover li > a:hover:after{
+  transform: scaleX(1);
+  transition: transform .3s;
+}
+.active{
+  color: #FE9D0C  !important;
+}
+
+/* end Menu */
+
+/* banner */
+.banner{
+  max-width: 1030px;
+  height: 570px;
+  margin: auto;
+  background-image: url(../img/bg/Banner\ 1.png);
+ 
+  background-size: cover;
+  background-position: center center ;
+  box-shadow: 0px 0px 5px 0px #cbcbcb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner .x{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.banner-title{
+  max-width: 426px;
+  margin-left: 20px;
+}
+.banner-title .title-tag {   
+  font-size: 96px;
+  color: transparent;
+  -webkit-text-stroke: 2px #ebeeee;
+}
+.Iam{
+  font-size: 36px;
+  color: #FCF8ED;
+  letter-spacing: 0.02em;
+}
+.cd-headline.clip{
+margin-top: -12px;
+margin-bottom: 10px;
+}
+
+.cd-words-wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+}
+.cd-words-wrapper b {
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  left: 0;
+  top: 0;
+  color: #FEB13D;
+  font-size: 36px;
+}
+.cd-words-wrapper b.is-visible {
+  position: relative;
+}
+ .cd-words-wrapper b {
+  opacity: 0;
+}
+ .cd-words-wrapper b.is-visible {
+  opacity: 1;
+}
+
+
+.cd-headline.clip .cd-words-wrapper {
+  overflow: hidden;
+  vertical-align: top;
+}
+.cd-headline.clip .cd-words-wrapper::after {
+  /* line */
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #feb13d46;
+}
+.cd-headline.clip b {
+  opacity: 0;
+}
+.cd-headline.clip b.is-visible {
+  opacity: 1;
+}
+
+
+
+.banner-title p{
+  color: #FAF4E1;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.02em; 
+}
+
+
+
+.banner-img{
+  display: flex;
+  justify-content: center;
+}
+.banner-img img{
+  margin-top: 33px;
+  margin-left: -35px;
+}
+
+
+.banner-icon{
+  display: flex;
+  flex-direction: column;
+
+}
+.banner-icon .bg-icon{
+  width: 45px;
+  height: 45px;
+  background-color:#FEB13D;
+  border-radius: 14px;
+  transition: 0.5s ease;
+ transform: rotate(45deg);
+ z-index: 0;
+}
+.banner-icon .icon-hover a img {
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 1.8px;
+  z-index: 1;
+}
+.banner-icon .icon-hover{
+  padding: 14px;
+}
+.icon-hover:hover .bg-icon{
+  transform: none;
+  transition: 0.1s;
+}
+
+/* end-banner */
+/* button hover */
+.d-grid .btn-10{
+  border: 1px solid #bbbaba;
+  color: #555555
+  
+}
+.d-grid .btn-10:hover {
+  color: #ffffff;
+  border: 1px solid #FEB13D;
+}
+.banner-btn{
+  margin-top: 24px;
+}
+
+.btn-10 {
+  text-decoration: none;
+  line-height: 45px;
+  color: black;
+  text-align: center;
+  font-size: 14px;
+}
+.btn-10 {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 45px;
+  max-width: 180px;
+  text-transform: uppercase;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  color: #ffffff;
+  transition: 0.7s ease-in-out;
+  z-index: 1
+}
+.btn-10:before, .btn-10:after,
+.btn-10 span:before,
+.btn-10 span:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 80px;
+  background-color: rgba(254, 157, 12, 0.623);
+  transition: 0.4s;
+  z-index: -1
+}
+.btn-10:after,
+.btn-10 span:before {
+  left: auto;
+  right: 0;
+}
+.btn-10 span:before,
+.btn-10 span:after {
+  transition-delay: 0.4s;
+}
+.btn-10:hover {
+  color: #2b2b2b;
+  border: 1px solid #FEB13D;
+}
+.btn-10:hover:before, .btn-10:hover:after,
+.btn-10:hover span:before,
+.btn-10:hover span:after {
+  width: 250px;
+}
+.btn-10:active {
+  background-color: #FEB13D;
+}
+
+@-webkit-keyframes criss-cross-left {
+  0% {
+    left: -20px;
+  }
+  50% {
+    left: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    left: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+
+@keyframes criss-cross-left {
+  0% {
+    left: -20px;
+  }
+  50% {
+    left: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    left: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+@-webkit-keyframes criss-cross-right {
+  0% {
+    right: -20px;
+  }
+  50% {
+    right: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    right: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+@keyframes criss-cross-right {
+  0% {
+    right: -20px;
+  }
+  50% {
+    right: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    right: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+
+/* end-button hover */
