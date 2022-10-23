@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link rel="stylesheet" href="css/home.css" />
+        <link rel="stylesheet" href="css/animate.css" />
         <title>Home</title>
     </head>
     <body>
@@ -59,10 +60,10 @@
         <!-- banner -->
         <section class="banner-section section-gap-top">
             <div class="container">
-                <div class="banner">
+                <div class="banner wow fadeIn" data-wow-duration="1.5s">
                     <div class="row">
                         <!-- <div class="col-12 col-sm-9 col-md-6 x"> -->
-                        <div class="col-12 col-sm-9 col-md-9 x">
+                        <div class="col-12 col-sm-9 col-md-9 x wow fadeInDown" data-wow-duration="2s" data-wow-delay="1s">
                             <div class="banner-title">
                                 <span class="title-tag">Hello !</span>
 
@@ -87,7 +88,7 @@
             </div> -->
 
                         <div class="col-12 col-sm-3 col-md-2 x">
-                            <div class="banner-icon">
+                            <div class="banner-icon wow fadeInLeft" data-wow-duration="2s" data-wow-delay="1s">
                                 <div class="icon-hover">
                                     <a href=""><img src="img/icon/fb.png" alt="" /></a>
                                     <div class="bg-icon"></div>
@@ -624,6 +625,18 @@
                 }
             })
         </script>
+         <script src="js/wow.js"></script>
+        <script>
+            wow = new WOW({
+                boxClass: "wow", // default
+                animateClass: "animated", // default
+                offset: 0, // default
+                mobile: true, // default
+                live: true, // default
+            })
+            wow.init()
+        </script>
+       
     </body>
 
     <!-- Extra small	None	<576px
