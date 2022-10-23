@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/animate.css" />
     <title>About Me</title>
 </head>
 <body>
@@ -56,7 +57,7 @@
 
    <!-- banner -->
    <section class="banner-about-section">
-    <div class="container til">
+    <div class="container til wow bounceIn" data-wow-duration="2s">
       <p>Hi Everyone !</p>
     </div>
  </section>
@@ -67,19 +68,15 @@
 
 
 
-
-
-
-
       <!-- About me -->
       <section class="about-section section-gap-top-about">
         <div class="container x">
-            <div class="about-me">
+            <div class="about-me" >
                 <div class="row">
-                    <div class=" col-sm-12 col-md-6 col-lg-6">
+                    <div class=" col-sm-12 col-md-6 col-lg-6 wow fadeIn" data-wow-duration="2s">
                         <img class="avatar" src="img/avatar/z3798910327463_bc097c1d2261347a740fd524692dc079 1.png" alt="">
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="col-sm-12 col-md-6 col-lg-6 wow fadeInRight" data-wow-duration="2s">
                       <div class="all-content container">
                         <div class="section-title">
                           <h1 class="title">
@@ -114,7 +111,7 @@
       </div>
 
       <div class="service mb-60">
-        <div class="row">
+        <div class="row wow bounceIn" data-wow-duration="1s">
           <div class="col-sm-6 col-lg-3 x">
 
             <div class="icon-hover">
@@ -218,7 +215,7 @@
       <div class="Program">
         <div class="row">
 
-          <div class="col icon-text-pg">
+          <div class="col icon-text-pg wow slideInLeft" data-wow-duration="1s">
             <p class="til-pg">Programs I Use</p>
             <div class="program">
                 <img class="pg-icon" src="img/icon/logos_figma.png" alt=""><p>Figma</p>
@@ -238,7 +235,7 @@
             
           </div>
 
-          <div class="col banner-program">
+          <div class="col banner-program wow slideInRight" data-wow-duration="1s">
             <img src="img/banner/about-02 1.png" alt="">
           </div>
 
@@ -271,7 +268,7 @@
               
               <div class="percent-skills-design">
                 <p class="skill-til">Design Skills</p>
-                <div class="skills_area wow fadeIn">
+                <div class="skills_area wow fadeIn" data-wow-duration="2s">
                   <!-- SINGLE PROGRESS -->
                   <div class="single-progressbar">
                     <div class="skill_text">
@@ -334,7 +331,7 @@
             </div>
           </div>
           
-            <div class="row">
+            <div class="row wow fadeIn" data-wow-duration="2s">
               <div class="col">
                 <p class="skill-til-code">Code Skills</p>
                 <div class="percent-skills-code">
@@ -385,7 +382,7 @@
           
 
             <div class="row edu-section ">
-              <div class="education">
+              <div class="education wow fadeIn" data-wow-duration="2s">
 
                 <div class="col-12 col-md-8">
                   <img src="img/banner/Frame 2180.png" alt="">
@@ -444,13 +441,13 @@
           <div class="row gallery">
 
             <div class="col-lg-4  col-md-6">
-              <div class="gallery-items image1">
+              <div class="gallery-items image1 wow fadeIn" data-wow-duration="2s">
                 <div class="layer">
                   <p>Travel</p>
                 </div>
                 <img src="img/favorite/Rectangle 15.png" alt="portfolio1"></img>
               </div>
-              <div class="gallery-items image2">
+              <div class="gallery-items image2 wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">
                 <div class="layer">
                   <p>Football</p>
                 </div>
@@ -459,13 +456,13 @@
             </div>
 
             <div class="col-lg-4  col-md-6">
-              <div class="gallery-items image3">
+              <div class="gallery-items image3 wow fadeIn" data-wow-duration="2s" data-wow-delay="1.5s">
                 <div class="layer">
                   <p>Party</p>
                 </div>
                 <img src="img/favorite/Rectangle 17.png" alt="portfolio1"></img>
               </div>
-              <div class="gallery-items image4">
+              <div class="gallery-items image4 wow fadeIn" data-wow-duration="2s" data-wow-delay="2s">
                 <div class="layer">
                   <p>Gym</p>
                 </div>
@@ -474,13 +471,13 @@
             </div>
 
             <div class="col-lg-4  col-md-6">
-              <div class="gallery-items image5">
+              <div class="gallery-items image5 wow fadeIn" data-wow-duration="2s">
                 <div class="layer">
                   <p>Boxing</p>
                 </div>
                 <img src="img/favorite/da-_1_.gif" alt="portfolio1"></img>
               </div>
-              <div class="gallery-items image6">
+              <div class="gallery-items image6 wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">
                 <div class="layer">
                   <p>Music</p>
                 </div>
@@ -611,7 +608,17 @@
 
 
 
-
+    <script src="js/wow.js"></script>
+    <script>
+        wow = new WOW({
+            boxClass: "wow", // default
+            animateClass: "animated", // default
+            offset: 0, // default
+            mobile: true, // default
+            live: true, // default
+        })
+        wow.init()
+    </script>
 
     <script src="js/bootstrap.min.js"></script>
 
