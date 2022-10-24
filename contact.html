@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link rel="stylesheet" href="css/contact.css" />
+        <link rel="stylesheet" href="css/animate.css" />
         <title>Contact</title>
     </head>
     <body>
@@ -63,7 +64,7 @@
                 <div class="section-title text-center mb-80">
                     <h2 class="title">Contact Me</h2>
                 </div>
-                <div class="form-contact">
+                <div class="form-contact wow bounceIn" data-wow-duration="2s">
                     <div class="row">
                         <div class="col-12 col-md-6 col-lg-8 form">
                             <p class="form-til">Message Me</p>
@@ -139,7 +140,7 @@
         <!-- end form contact -->
 
         <section class="footer-icon-section mb-80">
-            <div class="icon-footer container">
+            <div class="icon-footer container wow bounceIn"  data-wow-duration="2s">
                 <a href="https://www.facebook.com/profile.php?id=100071644967034"><img src="img/icon-footer/bi_facebook.png" alt="" /></a>
                 <a href=""><img src="img/icon-footer/ant-design_behance-circle-filled.png" alt="" /></a>
                 <a href=""><img src="img/icon-footer/entypo-social_linkedin-with-circle.png" alt="" /></a>
@@ -148,5 +149,16 @@
         </section>
 
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/wow.js"></script>
+        <script>
+            wow = new WOW({
+                boxClass: "wow", // default
+                animateClass: "animated", // default
+                offset: 0, // default
+                mobile: true, // default
+                live: true, // default
+            })
+            wow.init()
+        </script>
     </body>
 </html>
