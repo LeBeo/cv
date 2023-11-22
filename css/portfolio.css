@@ -192,6 +192,7 @@ body{
 
 
 
+
 .app .number{
     font-size: 60px;
     font-weight: bolder;
@@ -212,6 +213,8 @@ body{
 }
 
 
+
+
 .app-attendance .number{
   font-size: 60px;
   font-weight: bolder;
@@ -228,6 +231,27 @@ body{
 .app-attendance .til{
   font-size: 20px;
   color: #034B5B;
+  padding-top: 16px;
+}
+
+
+
+.ticket .number{
+  font-size: 60px;
+  font-weight: bolder;
+  text-align: center;
+  color: #3C8DD8;
+  padding-top: 55px;
+  padding-left: 40px;
+}
+.ticket .line{
+  width: 180px;
+  height: 1px;
+  background-color:#3C8DD8;
+}
+.ticket .til{
+  font-size: 20px;
+  color: #3C8DD8;
   padding-top: 16px;
 }
 
@@ -736,6 +760,60 @@ body{
 }
 /* end-button-app */
 
+
+
+/* button-ticket */
+.btn-ticket {
+  text-decoration: none;
+  line-height: 50px;
+  text-align: center;
+  font-size: 12px;
+}
+.btn-ticket {
+  position: relative;
+  color: #3C8DD8;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 50px;
+  max-width: 150px;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+  transition: 0.5s ease-in-out;
+}
+.btn-ticket:before, .btn-ticket:after {
+  position: absolute;
+  top: 50%;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #3C8DD8;
+  border-radius: 50%;
+}
+.btn-ticket:before {
+  left: -20px;
+  transform: translate(-50%, -50%);
+}
+.btn-ticket:after {
+  right: -20px;
+  transform: translate(50%, -50%);
+}
+.btn-ticket:hover {
+  color: #f3e9f3;
+  transition: 0.5s ease-in-out;
+}
+.btn-ticket:hover:before {
+          animation: criss-cross-left 0.8s both;
+          animation-direction: alternate;
+          z-index: -1;
+}
+.btn-ticket:hover:after {
+          animation: criss-cross-right 0.8s both;
+          animation-direction: alternate;
+          z-index: -1;
+}
+/* end-button-ticket */
 
 
 
