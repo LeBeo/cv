@@ -256,6 +256,25 @@ body{
 }
 
 
+.web-camp .number{
+  font-size: 60px;
+  font-weight: bolder;
+  text-align: center;
+  color: #03caa9;
+  padding-top: 55px;
+  padding-left: 40px;
+}
+.web-camp .line{
+  width: 180px;
+  height: 1px;
+  background-color:#03caa9;
+}
+.web-camp .til{
+  font-size: 20px;
+  color: #03caa9;
+  padding-top: 16px;
+}
+
 
 /* end port-section */
 
@@ -813,7 +832,108 @@ body{
           animation-direction: alternate;
           z-index: -1;
 }
-/* end-button-ticket */
+
+
+
+
+
+
+
+
+/* button camp */
+.d-grid .btn-101{
+  border: 1px solid #bbbaba;
+  color: #555555
+  
+}
+.d-grid .btn-101:hover {
+  color: #ffffff;
+  border: 1px solid #03caa9;
+}
+.banner-btn{
+  margin-top: 24px;
+}
+
+.btn-101 {
+  text-decoration: none;
+  line-height: 45px;
+  color: black;
+  text-align: center;
+  font-size: 14px;
+}
+.web-camp .btn-101 {
+  text-decoration: none;
+  line-height: 50px;
+  text-align: center;
+  font-size: 12px;
+}
+.btn-101 {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 45px;
+  max-width: 180px;
+  text-transform: uppercase;
+  border: 1px solid #03caa9;
+  border-radius: 4px;
+  color: #03caa9;
+  transition: 0.7s ease-in-out;
+  z-index: 1
+}
+.web-camp .btn-101 {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 50px;
+  max-width: 150px;
+  text-transform: uppercase;
+  border: 1px solid #03caa9;
+  border-radius: 0px;
+  color: ##03caa9;
+  transition: 0.7s ease-in-out;
+  z-index: 1
+}
+.web-camp .btn-101:hover {
+  color: #ffffff;
+  border: 1px solid #03caa9;
+}
+.btn-101:before, .btn-10:after,
+.btn-101 span:before,
+.btn-101 span:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 80px;
+  background-color: rgba(2, 207, 156, 0.603);
+  transition: 0.4s;
+  z-index: -1
+}
+.btn-101:after,
+.btn-101 span:before {
+  left: auto;
+  right: 0;
+}
+.btn-101 span:before,
+.btn-101 span:after {
+  transition-delay: 0.4s;
+}
+.btn-101:hover {
+  color: #2b2b2b;
+  border: 1px solid #03caa9;
+}
+.btn-101:hover:before, .btn-10:hover:after,
+.btn-101:hover span:before,
+.btn-101:hover span:after {
+  width: 250px;
+}
+.btn-101:active {
+  background-color: #03caa9;
+}
+/* end-button-camp */
 
 
 
