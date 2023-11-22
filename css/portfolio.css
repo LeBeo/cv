@@ -891,7 +891,7 @@ body{
   text-transform: uppercase;
   border: 1px solid #03caa9;
   border-radius: 0px;
-  color: ##03caa9;
+  color: #03caa9;
   transition: 0.7s ease-in-out;
   z-index: 1
 }
