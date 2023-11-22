@@ -212,6 +212,26 @@ body{
 }
 
 
+.app-attendance .number{
+  font-size: 60px;
+  font-weight: bolder;
+  text-align: center;
+  color: #034B5B;
+  padding-top: 55px;
+  padding-left: 40px;
+}
+.app-attendance .line{
+  width: 180px;
+  height: 1px;
+  background-color:#034B5B;
+}
+.app-attendance .til{
+  font-size: 20px;
+  color: #034B5B;
+  padding-top: 16px;
+}
+
+
 
 /* end port-section */
 
@@ -531,6 +551,62 @@ body{
   }
 
 /* end-button web-gym */
+
+
+/* button app-attendance  */
+.app-attendance .btn-2 {
+  text-decoration: none;
+  line-height: 50px;
+  text-align: center;
+  font-size: 12px;
+}
+.btn-2 {
+  color:#034B5B;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 50px;
+  max-width: 150px;
+  border: 1px solid #034B5B;
+  transition: 0.5s ease-in-out;
+}
+.btn-2:before, .btn-2:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+.btn-2:before {
+  right: -100px;
+  border-right: 50px solid transparent;
+  border-bottom: 80px solid #034B5B;
+  transform: translateX(-100%);
+  transition: 0.5s ease-in-out;
+  z-index: -1;
+}
+.btn-2:after {
+  left: -50px;
+  border-left: 50px solid transparent;
+  border-top: 80px solid #034B5B;
+  transform: translateX(100%);
+  transition: 0.5s ease-in-out;
+}
+.btn-2:hover {
+  color: #e9e9e9;
+  transition: 0.5s ease-in-out;
+}
+.btn-2:hover:before {
+  transform: translateX(-49%);
+}
+.btn-2:hover:after {
+  transform: translateX(49%);
+}
+
+/* end-button app-attendance */
 
 
 
