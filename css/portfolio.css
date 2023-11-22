@@ -899,7 +899,7 @@ body{
   color: #ffffff;
   border: 1px solid #03caa9;
 }
-.btn-101:before, .btn-10:after,
+.btn-101:before, .btn-101:after,
 .btn-101 span:before,
 .btn-101 span:after {
   content: "";
